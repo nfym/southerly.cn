@@ -1,15 +1,11 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+/*
+ * @Description: In User Settings Edit
+ * @Author: southerly
+ * @Date: 2021-02-21 11:35:58
+ * @LastEditors: southerly
+ * @lastEditTime: Do not edit
  */
-
 module.exports = {
-    // samples: {
-    //   // Features: ["mdx"],
-    //   "React 基础示例": [],
-    // },
     css_tutorials: {
         基础: ["css/box-model/box-model"],
     },

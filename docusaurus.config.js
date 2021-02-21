@@ -1,3 +1,10 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: southerly
+ * @Date: 2021-02-21 11:35:58
+ * @LastEditors: southerly
+ * @lastEditTime: Do not edit
+ */
 const path = require("path");
 
 module.exports = {
@@ -18,10 +25,12 @@ module.exports = {
                 src: "img/logo.png",
                 srcDark: "img/logo.png",
             },
-            items: [{
-                    type: "localeDropdown",
-                    position: "left",
-                },
+            items: [
+                // 中英切换
+                // {
+                //     type: "localeDropdown",
+                //     position: "left",
+                // },
                 {
                     to: "/",
                     label: "博客",
@@ -33,10 +42,6 @@ module.exports = {
                         {
                             label: "职业",
                             to: "tags/职业",
-                        },
-                        {
-                            label: "健康",
-                            to: "tags/健康",
                         },
                     ],
                 },
@@ -72,11 +77,6 @@ module.exports = {
                     to: "docs/resources/resources-intro",
                 },
                 {
-                    href: "https://www.itnanls.cn",
-                    label: "后端学习",
-                    position: "right",
-                },
-                {
                     href: "https://github.com/weixiaorensheng/southerly.cn",
                     label: "GitHub",
                     position: "right",
@@ -97,19 +97,6 @@ module.exports = {
                         }
                     ]
                 },
-                // {
-                //   title: "Community",
-                //   items: [
-                //     {
-                //       label: "Stack Overflow",
-                //       href: "https://stackoverflow.com/questions/tagged/docusaurus"
-                //     },
-                //     {
-                //       label: "Discord",
-                //       href: "https://discordapp.com/invite/docusaurus"
-                //     }
-                //   ]
-                // },
                 {
                     title: "Social",
                     items: [{
@@ -167,17 +154,17 @@ module.exports = {
         [
             "@docusaurus/preset-classic",
             {
-                docs: {
-                    sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master/docs",
-                },
+                // docs: {
+                //     sidebarPath: require.resolve("./sidebars.js"),
+                //     editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master/docs",
+                // },
                 blog: {
                     path: "./blog",
                     routeBasePath: "/",
                     blogSidebarTitle: "近期文章",
                     feedOptions: {
                         type: "all",
-                        title: "峰华前端工程师",
+                        title: "前端工程师",
                         copyright: `Copyright © ${new Date().getFullYear()} 南风 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/">冀ICP备14007097号-3</a></p>`,
                     },
                 },
@@ -196,8 +183,6 @@ module.exports = {
     plugins: [
         path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
         path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
-        // "@docusaurus/plugin-ideal-image",
-        // path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
     ],
     i18n: {
         defaultLocale: "zh-CN",

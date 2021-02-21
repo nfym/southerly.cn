@@ -69,13 +69,6 @@ function BlogListPage(props) {
     // delay: 1200,
   });
 
-  // const animatedBackground = useSpring({
-  //   background: "linear-gradient(25deg, #1081ff, #72e1f6, #b185ff)",
-  //   to: {
-  //     background: "linear-gradient(375deg, #1081ff, #72e1f6, #b185ff)",
-  //   },
-  // });
-
   return (
     <Layout title={title} description={description}>
       {/* 个人简介 */}
@@ -90,13 +83,12 @@ function BlogListPage(props) {
             </animated.div>
             <animated.p style={animatedTexts[1]}>
               <Translate id="homepage.hero.text" description="hero text">
-                在这里，有
-                我的学习笔记、系统教程、编程博客、前端资源导航和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个发。
+                在这里，有我的学习笔记、系统教程、编程博客、资源导航和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个发。
               </Translate>
             </animated.p>
             <animated.p style={animatedTexts[3]}>
               <Translate id="homepage.qqgroup" description="qq group">
-                QQ 1 群：644722908，2 群：1004912565
+                {/* QQ 1 群：644722908， */}
               </Translate>
             </animated.p>
             <SocialLinks animatedProps={animatedTexts[4]} />
@@ -118,25 +110,13 @@ function BlogListPage(props) {
               </Button>
             </animated.div>
           </div>
-
-          {/* <div className="bloghome__image">
-          <animated.img src="/img/hero_main.svg" style={animatedHero} />
-        </div> */}
-          {/* <animated.div
-          className="bloghome__scroll-down"
-          style={animatedBackground}
-        >
-          <button>
-            <ArrowDown />
-          </button>
-        </animated.div> */}
         </animated.div>
       )}
+
       <div className="container-wrapper">
         <div className="container padding-vert--sm">
           <div className="row">
             <div className="col col--12">
-              {/* <div className="content__divider"></div> */}
               {!isPaginated && (
                 <h1 className="blog__section_title">
                   <Translate description="latest blogs heading">
@@ -186,7 +166,6 @@ function BlogListPage(props) {
 }
 
 function SocialLinks({ animatedProps, ...props }) {
-  // const { isDarkTheme } = useThemeContext();
   return (
     <animated.div className="social__links" style={animatedProps}>
       <a href="https://space.bilibili.com/302954484">
