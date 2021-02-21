@@ -91,7 +91,7 @@ function BlogListPage(props) {
             <animated.p style={animatedTexts[1]}>
               <Translate id="homepage.hero.text" description="hero text">
                 在这里，有
-                我的学习笔记、系统教程、编程博客、前端资源导航和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。
+                我的学习笔记、系统教程、编程博客、前端资源导航和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个发。
               </Translate>
             </animated.p>
             <animated.p style={animatedTexts[3]}>
