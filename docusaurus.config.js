@@ -1,5 +1,5 @@
 /*
- * @Description: In User Settings Edit
+ * @Description: 项目配置文件
  * @Author: southerly
  * @Date: 2021-02-21 11:35:58
  * @LastEditors: southerly
@@ -8,6 +8,7 @@
 const path = require("path");
 
 module.exports = {
+    // 站点元数据
     title: "南风逸梦",
     tagline: "提升前端开发技能",
     titleDelimiter: "-",
@@ -18,8 +19,9 @@ module.exports = {
     projectName: "southerly.cn", // Usually your repo name.
     stylesheets: ["https://fonts.font.im/css?family=Raleway:500,700"],
     themeConfig: {
+        // 导航栏配置
         navbar: {
-            title: "南风<前端/>工程师",
+            title: "南风 <前端 /> 工程师",
             logo: {
                 alt: "南风",
                 src: "img/logo.png",
@@ -46,30 +48,14 @@ module.exports = {
                     ],
                 },
                 {
-                    label: "语雀",
+                    label: "yuque",
                     position: "right",
-                    to: "https://www.yuque.com/southerly/",
+                    to: "yuque/helloReact",
                 },
                 {
                     label: "笔记",
                     position: "right",
                     to: "docs/videos/videos-intro",
-                },
-                {
-                    label: "课程",
-                    position: "right",
-                    items: [{
-                        label: "React 即时通信 UI 开发实战",
-                        to: "docs/course/react-chat-ui/react-chat-ui",
-                    }, ],
-                },
-                {
-                    label: "教程",
-                    position: "right",
-                    items: [{
-                        label: "CSS",
-                        to: "docs/css/box-model/box-model",
-                    }, ],
                 },
                 {
                     label: "资源导航",
@@ -83,6 +69,7 @@ module.exports = {
                 },
             ],
         },
+        // 页脚配置
         footer: {
             style: "dark",
             links: [{
@@ -108,16 +95,8 @@ module.exports = {
                             href: "https://github.com/weixiaorensheng/southerly.cn",
                         },
                         {
-                            label: "Bilibili 哔哩哔哩",
-                            href: "https://space.bilibili.com/302954484",
-                        },
-                        {
                             label: "知乎",
                             href: "https://www.zhihu.com/people/xihe.doc/posts",
-                        },
-                        {
-                            label: "腾讯课堂",
-                            href: "https://ke.qq.com/course/2839093?tuin=3850fdc6",
                         },
                     ],
                 },
@@ -150,14 +129,16 @@ module.exports = {
             anonymizeIP: true, // Should IPs be anonymized?
         },
     },
+    // 预设配置
     presets: [
         [
             "@docusaurus/preset-classic",
             {
-                // docs: {
-                //     sidebarPath: require.resolve("./sidebars.js"),
-                //     editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master/docs",
-                // },
+                docs: {
+                    // Sidebars filepath relative to the site dir.
+                    sidebarPath: require.resolve("./sidebars.js"),
+                    editUrl: "https://github.com/weixiaorensheng/southerly.cn/tree/master/docs",
+                },
                 blog: {
                     path: "./blog",
                     routeBasePath: "/",
@@ -179,7 +160,9 @@ module.exports = {
             },
         ],
     ],
-    themes: ["@docusaurus/theme-live-codeblock"],
+    // 主题配置
+    themes: ["@docusaurus/theme-live-codeblock"], // @docusaurus/theme-live-codeblock
+    // 插件配置
     plugins: [
         path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
         path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),

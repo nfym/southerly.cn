@@ -18,9 +18,9 @@ import {
   faQq,
   faWeixin,
   faWeibo,
+  faZhihu,
 } from "@fortawesome/free-brands-svg-icons";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-// import bilibiliIcon from "@site/static/icons/bilibili.svg";
 
 import useThemeContext from "@theme/hooks/useThemeContext";
 import useFollowers from "./useFollowers";
@@ -78,12 +78,12 @@ function BlogListPage(props) {
             <animated.div style={animatedTexts[0]} className="hero_text">
               <Translate description="hero greet">Hello! 我是</Translate>
               <span className="intro__name">
-                <Translate description="my name">南风</Translate>
+                <Translate description="my name"> 南风逸梦</Translate>
               </span>
             </animated.div>
             <animated.p style={animatedTexts[1]}>
               <Translate id="homepage.hero.text" description="hero text">
-                在这里，有我的学习笔记、系统教程、编程博客、资源导航和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个发。
+                在这里，有我的学习笔记、系统教程、编程博客、资源导航和生活点滴。目前主要是我个人前端学习的记录，致力于打造个人知识体系，并希望我的博客能帮助到你。
               </Translate>
             </animated.p>
             <animated.p style={animatedTexts[3]}>
@@ -105,7 +105,7 @@ function BlogListPage(props) {
                   去知乎关注
                 </Translate>
                 <Translate id="homepage.followers" description="followers">
-                  ({(Math.round(followers) / 10000).toFixed(1)} 万)
+                  {/* ({(Math.round(followers) / 10000).toFixed(1)} 万) */}
                 </Translate>
               </Button>
             </animated.div>
@@ -168,14 +168,20 @@ function BlogListPage(props) {
 function SocialLinks({ animatedProps, ...props }) {
   return (
     <animated.div className="social__links" style={animatedProps}>
-      <a href="https://space.bilibili.com/302954484">
+      <a target="_blink" href="https://space.bilibili.com/302954484">
         <BilibiliIcon />
+      </a>
+      <a target="_blink" href="https://www.linkedin.com/in/zxuqian/">
+        <FontAwesomeIcon icon={faQq} size="lg" />
       </a>
       <a href="https://www.linkedin.com/in/zxuqian/">
         <FontAwesomeIcon icon={faLinkedin} size="lg" />
       </a>
       <a href="https://github.com/zxuqian">
         <FontAwesomeIcon icon={faGithub} size="lg" />
+      </a>
+      <a href="https://blog.csdn.net/fengqiuzhihua">
+        <FontAwesomeIcon icon={faZhihu} size="lg" />
       </a>
       <a href="https://blog.csdn.net/fengqiuzhihua">
         <CSDNIcon />
