@@ -26,7 +26,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import Comments from "@site/src/components/Comments";
+// import Comments from "@site/src/components/Comments";
 
 import Translate, { translate } from "@docusaurus/Translate";
 
@@ -246,9 +246,9 @@ function BlogPostItem(props) {
                 </strong>
               </Link>
             )}
-            {isBlogPostPage && (
+            {/* {isBlogPostPage && (
               <Comments activityId={activityId} oid={oid} bvid={bvid} />
-            )}
+            )} */}
           </footer>
         </div>
       </div>

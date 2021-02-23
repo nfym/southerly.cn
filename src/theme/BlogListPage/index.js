@@ -1,9 +1,4 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+
 
 import React, { useContext, useEffect, useState } from "react";
 
@@ -31,6 +26,8 @@ import Fade from "react-reveal/Fade";
 import ArrowDown from "@site/static/icons/arrow-down.svg";
 import BilibiliIcon from "@site/static/icons/bilibili.svg";
 import CSDNIcon from "@site/static/icons/csdn.svg";
+import ZhihuIcon from "@site/static/icons/zhihu.svg";
+
 import Button from "../../components/Button";
 
 import Translate, { translate } from "@docusaurus/Translate";
@@ -83,7 +80,7 @@ function BlogListPage(props) {
             </animated.div>
             <animated.p style={animatedTexts[1]}>
               <Translate id="homepage.hero.text" description="hero text">
-                在这里，有我的学习笔记、系统教程、编程博客、资源导航和生活点滴。目前主要是我个人前端学习的记录，致力于打造个人知识体系，并希望我的博客能帮助到你。
+                在这里，有我的学习笔记、编程博客、资源导航和生活点滴。目前主要是我个人前端学习的记录，致力于打造个人知识体系，并希望我的博客能帮助到你。
               </Translate>
             </animated.p>
             <animated.p style={animatedTexts[3]}>
@@ -168,22 +165,19 @@ function BlogListPage(props) {
 function SocialLinks({ animatedProps, ...props }) {
   return (
     <animated.div className="social__links" style={animatedProps}>
-      <a target="_blink" href="https://space.bilibili.com/302954484">
+      <a target="_blink" href="https://space.bilibili.com/131936520">
         <BilibiliIcon />
       </a>
-      <a target="_blink" href="https://www.linkedin.com/in/zxuqian/">
-        <FontAwesomeIcon icon={faQq} size="lg" />
+      <a href="https://blog.csdn.net/fengqiuzhihua">
+        <ZhihuIcon />
       </a>
-      <a href="https://www.linkedin.com/in/zxuqian/">
+      <a target="_blink" href="https://www.linkedin.com/in/haonan-hu-b2424b176/">
         <FontAwesomeIcon icon={faLinkedin} size="lg" />
       </a>
-      <a href="https://github.com/zxuqian">
+      <a target="_blink" href="https://github.com/weixiaorensheng">
         <FontAwesomeIcon icon={faGithub} size="lg" />
       </a>
-      <a href="https://blog.csdn.net/fengqiuzhihua">
-        <FontAwesomeIcon icon={faZhihu} size="lg" />
-      </a>
-      <a href="https://blog.csdn.net/fengqiuzhihua">
+      <a target="_blink" href="https://blog.csdn.net/qq_36976569">
         <CSDNIcon />
       </a>
       <div className="dropdown dropdown--hoverable">
