@@ -7,9 +7,6 @@
  */
 
 module.exports = {
-    // css_tutorials: {
-    //     基础: ["css/box-model/box-model"],
-    // },
     videos: {
         简介: ["videos/videos-intro"],
         JavaScript: ["videos/js/01-event-loop/event-loop"],

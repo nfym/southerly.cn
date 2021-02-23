@@ -16,7 +16,7 @@ import styled from "styled-components";
 
 在 CSS flexbox 布局出现以前，如果要控制 HTML 元素的布局，要用到很多种奇葩的方式。在水平方向上得用`float`控制左右对齐，稍一不注意，就会有浮动的元素飞来飞去~。在垂直方向上就更是百家争鸣了：要么手动计算高度然后算出中心点，要么用 `line-height` 和 `height` 的结合，要么用十之八九不生效的 `vertical-align` 属性等等等等。自从 flex-box 出现以后，一切似乎就豁然开朗了，水平垂直各种花式对齐，空间分配由你做主。当然，要用好它，用对它也不是一件容易的事，今天就给你说说 flex-box 布局，看完之后你也能熟练的运用它！（博客中的示例都是真实的 HTML 代码，可以使用 chrome 开发者工具查看属性。(此文为了演示某些 flex 示例，在小屏幕下会有横向滚动条)
 
-<!-- truncate -->
+
 
 2 分钟视频入门版：[2 分钟掌握 CSS Grid 布局](https://www.bilibili.com/video/BV1P7411m7Nu/)
 

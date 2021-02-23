@@ -35,17 +35,12 @@ module.exports = {
                 // },
                 {
                     to: "/",
-                    label: "博客",
+                    label: "分类",
                     position: "right",
                     items: [{
-                            label: "前端",
-                            to: "tags/前端",
-                        },
-                        {
-                            label: "职业",
-                            to: "tags/职业",
-                        },
-                    ],
+                        label: "前端",
+                        to: "tags/前端",
+                    }, ],
                 },
                 {
                     label: "yuque",
